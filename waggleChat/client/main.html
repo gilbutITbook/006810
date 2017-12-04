@@ -1,0 +1,33 @@
+<head>
+    <title>waggleChat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+    <!-- 다이나믹으로 구현하기 -->
+    {{>Template.dynamic template=currentMode}}
+
+</body>
+
+<template name="chatMain">
+
+    <div class="container">
+        <!-- loginButtons  -->
+        <p>{{>loginButtons}}</p>
+        <!-- createRoom -->
+        <p>{{>createRoom}}</p>
+        <!-- roomList -->
+        <p>{{>roomList}}</p>
+    </div>
+
+</template>
+
+<template name="chatRoom">
+    <div class="panel">
+        {{>roomHeader}}
+        {{>messageList}} <!-- 추가 -->
+        {{>messageInput}}
+    </div>
+</template>
+
+

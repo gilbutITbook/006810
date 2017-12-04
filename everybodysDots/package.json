@@ -1,0 +1,11 @@
+{
+  "name": "everybodysDots",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "highcharts": "^4.2.7",
+    "meteor-node-stubs": "~0.2.0"
+  }
+}

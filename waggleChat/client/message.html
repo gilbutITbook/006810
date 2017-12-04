@@ -1,0 +1,37 @@
+
+<template name="message">
+    {{#if me}}
+        <li class="message right clearfix">
+            <span class="chat-img pull-right">
+              <img src="{{gravatar}}" alt="User Avatar" class="img-circle" />
+            </span>
+            <div class="chat-body clearfix">
+                <div class="header">
+                    <small class="text-muted">
+                        <span class="glyphicon glyphicon-time"></span> {{ago timestamp}}
+                    </small>
+
+                    <strong class="pull-right primary-font">{{usr}}</strong>
+                </div>
+                <p>{{msg}} {{#if isClient}} - Sending...{{/if}}</p>
+            </div>
+        </li>
+    {{else}}
+        <li class="message left clearfix">
+            <span class="chat-img pull-left">
+                <img src="{{gravatar}}" alt="User Avatar" class="img-circle" />
+            </span>
+            <div class="chat-body clearfix">
+                <div class="header">
+                    <strong class="primary-font">{{usr}}</strong>
+                    <small class="pull-right text-muted">
+                        <span class="glyphicon glyphicon-time"></span> {{ago timestamp}}
+                    </small>
+                </div>
+                <p>{{msg}}</p>
+            </div>
+        </li>
+    {{/if}}
+</template>
+
+

@@ -1,0 +1,11 @@
+<template name="postList">
+
+    <h4 class="text-center">
+        <a href="/writePost" class="btn btn-default">새 포스트 작성하기</a>
+    </h4>
+
+    {{#each list}}
+        {{>post}}
+    {{/each}}
+</template>
+

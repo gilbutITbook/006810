@@ -1,0 +1,23 @@
+<head>
+  <title>pictureBoard</title>
+</head>
+
+<body>
+
+</body>
+
+
+<template name="boardLayout">
+    <div class="container">
+        <div class="row"><h1 class="text-center">Picture Board</h1>
+            <div class="text-center">나만의 사진첩을 만들어 보아요</div>
+        </div>
+
+        {{>Template.dynamic template=content}}
+
+        <p class="text-center">
+            <a href="#" class="btn btn-default">Back to top <i class="fa fa-chevron-up"></i></a>
+        </p>
+    </div>
+</template>
+

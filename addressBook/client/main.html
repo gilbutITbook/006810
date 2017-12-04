@@ -1,0 +1,13 @@
+
+<head>
+    <title>Address Book</title>
+</head>
+
+<body>
+    <div class="well">{{>loginButtons}}</div>
+    {{#if currentUser}}
+        {{>addressInput}}
+        {{>addressList}}
+    {{/if}}
+</body>
+

@@ -1,0 +1,18 @@
+
+<template name="container">
+    <div class="container">
+        {{#each dots}}
+            {{>dot}}
+        {{/each}}
+        <div class="action">
+            선택된색 :
+            <span style="background-color:{{currentColor}};">
+                       ( {{currentColor}} )
+            </span> /
+            <button name="reset" class="btn btn-default btn-xs">
+                 <i class="glyphicon glyphicon-repeat"></i> 선택된 색으로 리셋하기
+            </button>
+        </div>
+    </div>
+</template>
+

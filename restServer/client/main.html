@@ -1,0 +1,30 @@
+<head>
+  <title>restServer</title>
+</head>
+
+<body>
+  <h1>파일업로드 테스트</h1>
+
+
+  <form method="post" enctype="multipart/form-data" action="/fileupload">
+      <input type="text" name="testField" value="test 필드값"/>
+      <input type="file" name="testFile">
+      <input type="submit">
+  </form>
+
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="info">
+  <h2>Learn Meteor!</h2>
+  <ul>
+    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
+    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
+    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
+    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+  </ul>
+</template>

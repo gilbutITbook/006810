@@ -1,0 +1,35 @@
+<head>
+  <title>customLogin</title>
+</head>
+
+<body>
+    {{>customSignUp}}
+    {{>customLogIn}}
+</body>
+
+
+<template name="customSignUp">
+    <div>
+        <p><input type="text" name="username" placeholder="아이디"></p>
+        <p><input type="text" name="email" placeholder="메일"></p>
+        <p><input type="text" name="name" placeholder="이름"></p>
+        <p><input type="password" name="password" placeholder="패스워드"></p>
+        <p><input type="password" name="password2" placeholder="패스워드체크"></p>
+        <p><button name="signUp">가입</button>
+            <button name="cancel">취소</button></p>
+    </div>
+</template>
+
+<template name="customLogIn">
+    {{#if loginYn}}
+        {{username}} <button name="logout">로그아웃</button>
+    {{else}}
+        <div>
+            <p><input type="text" name="email" placeholder="메일"></p>
+            <p><input type="password" name="password" placeholder="패스워드"></p>
+            <p><button name="login">로그인</button>
+                <button name="goSignUn">가입</button></p>
+        </div>
+    {{/if}}
+</template>
+

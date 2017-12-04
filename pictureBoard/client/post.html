@@ -1,0 +1,33 @@
+
+<template name="post">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <span>{{title}}</span>
+                        <span style="float:right;">
+                            <button name="removePost" class="btn btn-default btn-xs">
+                                <i class="glyphicon glyphicon-trash"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    {{#if url}}
+                        <img src="{{url}}" class="post-img img-rounded">
+                    {{/if}}
+                    <div class="col-md-12">
+                        <textarea class="editable">
+                            {{context}}
+                        </textarea>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div> 등록일 : {{ago atDate}} </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
